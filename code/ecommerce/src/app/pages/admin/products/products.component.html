@@ -1,0 +1,30 @@
+<div class="row">
+    <div [ngClass]= "isSidePanal ? 'col-8' : 'col-12'">
+        <div class="card">
+            <div class="card-header bg-primary">
+                <div class="row">
+                    <div class="col-6">
+                        product List
+                    </div>
+                    <div class="col-6 text-end" >
+                        <button class="btn btn-sn btn-success">New</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-4" *ngIf = "isSidePanal">
+        <div class="card">
+            <div class="card-header bg-primary">
+                <div class="row">
+                    <div class="col-6 text-end">
+                        New product List
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-sn btn-success">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
