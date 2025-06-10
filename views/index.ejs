@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Messageboard</title>
+    </head>
+    <body>
+        <ul>
+        <% messages.forEach((message, id) => { %>
+                <%- include('message', {message: message}) %>
+            <form method="post" action="/messages/<%=id%>/text/open">
+                <button type="submit">open</button>
+            </form>
+             
+            <% }) %>
+            
+            </ul>
+    </body>
+</html>
